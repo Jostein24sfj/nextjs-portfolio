@@ -1,15 +1,14 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import { Figtree } from "next/font/google";
+import Footer from "./components/Footer";
+import SkillGroup from "./components/SkillGroup";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const figtree = Figtree({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "600", "700"], // or any weights you want
+  variable: "--font-figtree", // for Tailwind or custom usage
 });
 
 export const metadata = {
@@ -20,11 +19,31 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Header />
+      <body className={`${figtree.className} ${figtree.variable} antialiased`}>
+        <div className="relative min-h-screen">
+          <div
+            className="fixed top-0 left-0 w-full h-full -z-10 bg-cover bg-center opacity-60"
+            style={{ backgroundImage: "url('/blackSand.avif')" }}
+          />
+          <Header />
 
-        <main className="px-6 md:px-12 xl:px-24">{children}</main>
+          <main className="px-6 md:px-12 xl:px-24 relative z-0">
+            {children}
+          </main>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <SkillGroup />
+        <Footer />
       </body>
     </html>
   );
