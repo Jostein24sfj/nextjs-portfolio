@@ -6,7 +6,7 @@ export default function HeroSection() {
       <section className="grid items-center min-h-[calc(100vh-104px)] w-full grid-cols-2">
         <HeroImage />
         <div></div>
-        <p className="max-w-lg justify-self-end">
+        <p className="max-w-lg justify-self-end text-xl">
           Dette er mitt første prosjekt i Nextjs. Prosjektet går til å lage en
           portfolio side som viser hvem jeg er og hva jeg kan. Jeg lager denne
           portfolioen for å trene videre på design og webutvikling. Styling blir

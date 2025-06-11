@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { Figtree } from "next/font/google";
 import Footer from "./components/Footer";
 import SkillGroup from "./components/SkillGroup";
+import Projects from "./components/Projects";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
         <div className="relative min-h-screen">
           <div
             className="fixed top-0 left-0 w-full h-full -z-10 bg-cover bg-center opacity-60"
-            style={{ backgroundImage: "url('/blackSandv2.jpg')" }}
+            style={{ backgroundImage: "url('/darkSpaceBlur.jpg')" }}
           />
           <Header />
 
@@ -38,11 +39,9 @@ export default function RootLayout({ children }) {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
 
         <SkillGroup />
+        <Projects />
         <Footer />
       </body>
     </html>

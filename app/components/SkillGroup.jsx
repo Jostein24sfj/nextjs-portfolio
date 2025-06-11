@@ -10,7 +10,7 @@ export default function SkillGroup() {
     <>
       <section className="">
         <div className="text-3xl">
-          <h2 className="absolute top-154 left-40 text-2xl md:top-198 md:p-0.5 md:left-79 md:text-3xl rounded-lg bg-zinc-800">
+          <h2 className="absolute top-154 left-40 text-2xl md:top-236 md:p-0.5 md:left-108 md:text-3xl">
             Skill Groups
           </h2>
         </div>
